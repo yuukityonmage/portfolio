@@ -1,0 +1,176 @@
+@charset "UFT-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "メイリオ";
+    line-height: normal;
+    color: #24292e;
+    margin: 0;
+    font-size: 14.4px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #24292e;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+li{
+    list-style: none;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin:130px  auto;
+    padding: 0 4%;
+
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-logo{
+    width: 120px;
+    height: 36px;
+    padding: 10px 0;
+}
+#header ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 10px 0;
+}
+#header li{
+    padding-right:30px ;
+}
+
+.mainvisual{
+    margin-bottom:80px ;
+}
+.mainvisual img{
+    width: 100%;
+    height: 420px;
+}
+
+#about h2, #works h2, #news h2, #contact h2{
+    text-align: center;
+    margin-bottom: 65px;
+}
+#about ul{
+    font-size: 14.4px;
+    margin-bottom: 30px;
+
+}
+.li-top{
+    margin-bottom: 30px;
+}
+#about li{
+    line-height: normal;
+}
+#about p{
+    line-height: normal;
+}
+
+.grid{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+dl{
+    overflow: hidden;
+}
+#news dt{
+    float: left;
+    clear: left;
+    width: 25%;
+    padding: 15px;
+}
+#news dd{
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+#news dt,dd{
+    border-bottom: 1px solid #24292e;  
+}
+
+#contact dt{
+    float: left;
+    clear: left;
+    width: 20%;
+    padding: 10px;
+}
+#contact dd{
+    float: left;
+    width: 80%;
+    border: 1px solid #24292e;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#contact dd textarea{
+    width: 100%;
+}
+.button{
+    margin: 30px auto;
+    justify-content: center;
+    padding:15px 85px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .wrapper{
+        margin: 0 0 70px;
+    }
+    #header{
+        flex-direction: column;
+        margin: 0;
+    }
+    .header-logo{
+        margin: 0 auto;
+    }
+    .grid{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    #news dt{
+        border-bottom: none;
+        float: none;
+        padding: 15px 0 0 0;
+    }
+    #news dd{
+        width: 100%;
+        border-top: none;
+        float: none;
+        padding: 0 0 15px 0;
+    }
+
+    #contact dt{
+        float: none;
+    }
+    #contact dd{
+        width: 100%;
+        float: none;
+        
+    }
+}
+
